@@ -1,18 +1,13 @@
-import React from 'react';
 import { Link, PageProps } from 'gatsby';
-
-import Layout from '../components/layout/layout';
-import Image from '../components/image/image';
-import SEO from '../components/seo';
-import Button from '../components/button/button';
-import Hero from '../components/hero/hero';
+import React from 'react';
 import BlogList from '../components/blog-list/blog-list';
+import Button from '../components/button/button';
+import Layout from '../components/layout/layout';
+import SEO from '../components/seo';
 
 const IndexPage: React.FC<PageProps<null>> = () => (
-  <Layout hideHeader>
+  <Layout>
     <SEO title="Home" />
-
-    <Hero />
 
     <section>
       <BlogList />

@@ -26,9 +26,7 @@ function SEO({
   description, lang = 'en', meta = [], title,
 }: SEOProps): ReactElement {
   const siteMetadata = useSiteMetadata();
-
   const metaDescription = description || siteMetadata.description;
-  console.log(siteMetadata);
   return (
     <Helmet
       htmlAttributes={{

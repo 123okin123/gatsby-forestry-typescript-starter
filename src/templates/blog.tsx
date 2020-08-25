@@ -4,8 +4,6 @@ import Img from 'gatsby-image';
 import Layout from '../components/layout/layout';
 import useBlogData from '../static-queries/useBlogData';
 import blogTemplateStyles from './blog.module.scss';
-import Header from '../components/header/header';
-// this component handles the blur img & fade-ins
 
 export default function Blog({ data }: PageProps<{markdownRemark: any}>): ReactElement {
   const md = data.markdownRemark;
