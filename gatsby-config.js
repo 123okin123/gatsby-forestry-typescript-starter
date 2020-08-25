@@ -2,6 +2,7 @@
 /* eslint-disable global-require */
 const config = require('./config.json');
 const infoData = require('./content/data/info.json');
+const menu = require('./menu.json');
 
 module.exports = {
   siteMetadata: {
@@ -12,6 +13,7 @@ module.exports = {
     contact: config.contact,
     primaryColor: config.primary_color,
     infoData,
+    ...menu,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

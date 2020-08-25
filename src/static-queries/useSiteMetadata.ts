@@ -16,6 +16,10 @@ interface SiteMetaData {
     description: string;
     background_color: string;
   }
+  menu: {
+    name: string;
+    link: string;
+  }[]
 }
 
 export default function useSiteMetadata(): SiteMetaData {
@@ -35,6 +39,10 @@ export default function useSiteMetadata(): SiteMetaData {
             cta
             description
             background_color
+          }
+          menu {
+            name
+            link
           }
         }
       }
