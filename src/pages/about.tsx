@@ -12,7 +12,7 @@ const SecondPage: React.FC<PageProps<null>> = () => {
     <Layout>
       <SEO title="Page two" />
       <h1>Hi from the second page</h1>
-      <p>{metaData.infoData.description}</p>
+      <p dangerouslySetInnerHTML={{ __html: metaData.infoData.description }} />
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   );
