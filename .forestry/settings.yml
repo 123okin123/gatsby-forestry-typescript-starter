@@ -1,0 +1,40 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: /static/admin
+webhook_url:
+upload_dir: static/uploads
+public_path: "/static/uploads"
+front_matter_path: ""
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_output_directory: public
+  install_dependencies_command: yarn install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: yarn forestry:preview
+sections:
+  - type: heading
+    label: Content
+  - type: directory
+    path: content/posts
+    label: Blog Posts
+    create: documents
+    match: "**/*"
+    new_doc_ext: md
+    templates:
+    - blog-post
+  - type: document
+    path: content/data/authors.yaml
+    label: Author List
+  - type: document
+    path: content/data/info.json
+    label: Info Page
+  - type: heading
+    label: General Config
+  - type: document
+    path: config.json
+    label: Site Info
+---
