@@ -9,12 +9,10 @@ const IndexPage: React.FC<PageProps<null>> = () => (
   <Layout>
     <SEO title="Home" />
 
-    <section>
+    <section className="py-12">
       <BlogList />
     </section>
 
-    <Button>Button</Button>
-    <Link to="/page-2/">Page 2</Link>
   </Layout>
 );
 

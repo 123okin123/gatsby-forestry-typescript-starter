@@ -10,10 +10,12 @@ const SecondPage: React.FC<PageProps<null>> = () => {
 
   return (
     <Layout>
-      <SEO title="Page two" />
-      <h1>Hi from the second page</h1>
-      <p dangerouslySetInnerHTML={{ __html: metaData.infoData.description }} />
-      <Link to="/">Go back to the homepage</Link>
+      <div className="py-12">
+        <SEO title="Page two" />
+        <h1>Hi from the second page</h1>
+        <p dangerouslySetInnerHTML={{ __html: metaData.infoData.description }} />
+        <Link to="/">Go back to the homepage</Link>
+      </div>
     </Layout>
   );
 };

@@ -8,6 +8,7 @@
   </a>
   
 </p>
+
 <h1 align="center">
   Gatsby Starter Project
 </h1>

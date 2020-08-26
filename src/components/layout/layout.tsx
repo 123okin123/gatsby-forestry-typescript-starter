@@ -15,19 +15,19 @@ export default function Layout({
 }: LayoutProps): ReactElement {
   const { title, description } = useSiteMetadata();
   return (
-    <section
-      style={{
-        backgroundColor: bgColor,
-      }}
-    >
-      <Helmet>
-        <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
-      </Helmet>
-
+    <>
       {!hideHeader && <Header />}
-      <div>{children}</div>
-    </section>
+      <section
+        className="container mx-auto"
+      >
+        <Helmet>
+          <html lang="en" />
+          <title>{title}</title>
+          <meta name="description" content={description} />
+        </Helmet>
+
+        <div>{children}</div>
+      </section>
+    </>
   );
 }
