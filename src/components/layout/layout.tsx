@@ -5,14 +5,13 @@ import useSiteMetadata from '../../static-queries/useSiteMetadata';
 import layoutStyles from './layout.module.scss';
 
 export interface LayoutProps {
-  page?: string,
   bgColor?: string,
   children: ReactElement[] | ReactElement
   hideHeader?: boolean
 }
 
 export default function Layout({
-  page, bgColor, children, hideHeader,
+  bgColor, children, hideHeader,
 }: LayoutProps): ReactElement {
   const { title, description } = useSiteMetadata();
   return (
