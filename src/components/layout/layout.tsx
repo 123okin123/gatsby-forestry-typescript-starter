@@ -1,8 +1,7 @@
 import React, { ReactElement } from 'react';
 import Helmet from 'react-helmet';
-import Header from '../header/header';
 import useSiteMetadata from '../../static-queries/useSiteMetadata';
-import layoutStyles from './layout.module.scss';
+import Header from '../header/header';
 
 export interface LayoutProps {
   bgColor?: string,
@@ -11,7 +10,7 @@ export interface LayoutProps {
 }
 
 export default function Layout({
-  bgColor, children, hideHeader,
+  children, hideHeader,
 }: LayoutProps): ReactElement {
   const { title, description } = useSiteMetadata();
   return (

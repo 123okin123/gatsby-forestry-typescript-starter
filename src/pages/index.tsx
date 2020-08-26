@@ -1,7 +1,6 @@
-import { Link, PageProps } from 'gatsby';
+import { PageProps } from 'gatsby';
 import React from 'react';
 import BlogList from '../components/blog-list/blog-list';
-import Button from '../components/button/button';
 import Layout from '../components/layout/layout';
 import SEO from '../components/seo';
 

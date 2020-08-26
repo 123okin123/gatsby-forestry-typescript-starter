@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react';
 import { graphql, Link, PageProps } from 'gatsby';
 import Img from 'gatsby-image';
+import React, { ReactElement } from 'react';
 import Layout from '../components/layout/layout';
 import useBlogData from '../static-queries/useBlogData';
 import blogTemplateStyles from './blog.module.scss';

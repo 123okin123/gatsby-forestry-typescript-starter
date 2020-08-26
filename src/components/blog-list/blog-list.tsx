@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import blogListStyles from './blog-list.module.scss';
+import React, { ReactElement } from 'react';
 import useBlogData from '../../static-queries/useBlogData';
+import blogListStyles from './blog-list.module.scss';
 
 export default function BlogList(): ReactElement {
   const blogData = useBlogData();

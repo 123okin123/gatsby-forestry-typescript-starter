@@ -41,7 +41,12 @@
   :last-child {
     margin-bottom: 0;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: normal;
     padding: 1.5rem 1rem;
     line-height: 1.2;
@@ -53,7 +58,8 @@
   ul {
     list-style: initial;
   }
-  ul, ol {
+  ul,
+  ol {
     margin-left: 1.25rem;
     margin-bottom: 1.25rem;
     padding-left: 1.45rem;
@@ -89,14 +95,20 @@
   .blog__body {
     max-width: 800px;
     padding: 0 2rem;
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       padding: 1.5rem;
     }
     span {
       width: 100%;
       margin: 1rem auto;
     }
-    ul, ol {
+    ul,
+    ol {
       margin-left: 1.5rem;
       margin-bottom: 1.5rem;
     }
